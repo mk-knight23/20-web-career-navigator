@@ -4,10 +4,22 @@
 
 :root {
   --tech-bg: #fafafa;
+  --tech-primary: #6366f1;
+  color-scheme: light;
 }
 
 .dark {
   --tech-bg: #050505;
+  color-scheme: dark;
+}
+
+.light {
+  --tech-bg: #fafafa;
+  color-scheme: light;
+}
+
+html {
+  background-color: var(--tech-bg);
 }
 
 body {
@@ -34,5 +46,13 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700;
+  @apply bg-slate-200 dark:bg-slate-800 rounded-full;
+}
+
+.light .custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-300;
+}
+
+kbd {
+  @apply px-2 py-1 text-xs font-mono bg-slate-200 dark:bg-slate-700 rounded border border-slate-300 dark:border-slate-600;
 }

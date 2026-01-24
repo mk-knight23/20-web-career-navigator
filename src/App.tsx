@@ -1,25 +1,27 @@
 import { motion } from 'framer-motion'
-import { useTechStore } from '@/stores/techStore'
-import { 
-  Telescope, 
-  Zap, 
-  Moon, 
-  Sun, 
+import { useSettingsStore } from '@/stores/settings'
+import {
+  Telescope,
+  Zap,
+  Moon,
+  Sun,
   Github,
   ChevronRight,
   TrendingUp,
   Users,
-  Compass
+  Compass,
+  Settings as SettingsIcon,
 } from 'lucide-react'
 import { RoadmapExplorer } from './components/RoadmapExplorer'
+import { SettingsPanel } from './components/SettingsPanel'
 
 export default function App() {
-  const { isDarkMode, toggleDarkMode } = useTechStore()
+  const { isDarkMode, toggleDarkMode, toggleHelp } = useSettingsStore()
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
+      <SettingsPanel onClose={() => toggleHelp()} />
       <div className="max-w-7xl mx-auto px-4 py-8">
-        {/* Navbar */}
         <nav className="flex justify-between items-center mb-20">
           <div className="flex items-center gap-3">
             <div className="bg-tech-primary p-2.5 rounded-2xl shadow-lg shadow-tech-primary/30">
@@ -38,14 +40,22 @@ export default function App() {
                 </a>
               ))}
             </div>
-            <button 
-              onClick={toggleDarkMode}
+            <button
+              onClick={() => toggleHelp()}
+              className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+            >
+              <SettingsIcon size={20} />
+            </button>
+            <button
+              onClick={() => { toggleDarkMode(); useSettingsStore.getState().applyTheme() }}
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
-            <a 
+            <a
               href="https://github.com/mk-knight23/38-Tech-Roadmaps-Viewer"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
             >
               <Github size={20} />
@@ -53,11 +63,10 @@ export default function App() {
           </div>
         </nav>
 
-        {/* Hero */}
         <section className="relative mb-32">
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-tech-primary opacity-5 blur-[120px] pointer-events-none" />
           <div className="absolute top-0 -right-24 w-96 h-96 bg-tech-secondary opacity-5 blur-[120px] pointer-events-none" />
-          
+
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -87,7 +96,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* Stats Summary */}
         <section className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32">
           {[
             { icon: <TrendingUp className="text-tech-primary" />, label: 'Technologies', value: '12+' },
@@ -103,7 +111,6 @@ export default function App() {
           ))}
         </section>
 
-        {/* Main Section */}
         <main id="technologies" className="space-y-16">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-2">
@@ -118,7 +125,6 @@ export default function App() {
           <RoadmapExplorer />
         </main>
 
-        {/* Footer */}
         <footer className="mt-48 pb-12 border-t border-slate-200 dark:border-slate-800 pt-16">
           <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
             <div className="space-y-4 max-w-xs">
@@ -130,7 +136,7 @@ export default function App() {
                 Building a clearer vision of the technological future through data-driven roadmaps and expert insights.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-3 gap-16 uppercase tracking-widest text-[10px] font-black">
               <div className="space-y-4">
                 <p className="text-slate-400">Platform</p>
