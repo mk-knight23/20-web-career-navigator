@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: 20-web-career-navigator
+    env: static
+    buildCommand: npm run build
+    publishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 22
