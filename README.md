@@ -1,6 +1,19 @@
-# Web Career Navigator
+# 20 Web Career Navigator
 
 A professional platform for exploring and visualizing the future of technology through interactive roadmaps. Built with React 19, TypeScript, and Tailwind CSS v4.
+
+## 📦 Deployment
+
+### Render (One-Click Deploy)
+This repository includes a `render.yaml` blueprint for automated deployment:
+1. Visit [dashboard.render.com](https://dashboard.render.com)
+2. Click "New +" → "Blueprint"
+3. Connect repository: `mk-knight23/20-web-career-navigator`
+4. Render will auto-detect and apply the blueprint configuration
+
+### Manual Deployment
+- **Build Command**: `npm run build`
+- **Publish Directory**: `dist`
 
 ## Features
 
