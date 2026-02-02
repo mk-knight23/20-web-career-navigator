@@ -1,4 +1,4 @@
-# TechVista - Technology Roadmap Viewer
+# Web Career Navigator
 
 A professional platform for exploring and visualizing the future of technology through interactive roadmaps. Built with React 19, TypeScript, and Tailwind CSS v4.
 
@@ -33,10 +33,10 @@ A professional platform for exploring and visualizing the future of technology t
 
 ```bash
 # Clone the repository
-git clone https://github.com/mk-knight23/techvista-roadmaps-viewer.git
+git clone https://github.com/mk-knight23/20-web-career-navigator.git
 
 # Navigate to project
-cd techvista-roadmaps-viewer
+cd 20-web-career-navigator
 
 # Install dependencies
 npm install
