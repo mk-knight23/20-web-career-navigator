@@ -19,12 +19,12 @@ export default function App() {
   const { isDarkMode, toggleDarkMode, toggleHelp } = useSettingsStore()
 
   return (
-    <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}>
+    <div className={`min-h-screen ${isDarkMode ? 'dark' : ''}`} role="application" aria-label="TechVista Technology Roadmap Viewer">
       <SettingsPanel onClose={() => toggleHelp()} />
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <nav className="flex justify-between items-center mb-20">
+        <nav className="flex justify-between items-center mb-20" role="navigation" aria-label="Main navigation">
           <div className="flex items-center gap-3">
-            <div className="bg-tech-primary p-2.5 rounded-2xl shadow-lg shadow-tech-primary/30">
+            <div className="bg-tech-primary p-2.5 rounded-2xl shadow-lg shadow-tech-primary/30" aria-hidden="true">
               <Telescope className="text-white w-7 h-7" />
             </div>
             <h1 className="text-2xl font-display font-black tracking-tight">
@@ -33,9 +33,9 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-8 mr-8">
+            <div className="hidden lg:flex items-center gap-8 mr-8" role="list">
               {['Vision', 'Technologies', 'Stats', 'Comparison'].map(item => (
-                <a key={item} href="#" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors">
+                <a key={item} href="#" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors" aria-label={`Navigate to ${item}`} role="listitem">
                   {item}
                 </a>
               ))}
@@ -43,12 +43,14 @@ export default function App() {
             <button
               onClick={() => toggleHelp()}
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              aria-label="Open settings panel"
             >
               <SettingsIcon size={20} />
             </button>
             <button
               onClick={() => { toggleDarkMode(); useSettingsStore.getState().applyTheme() }}
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -57,13 +59,14 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              aria-label="View source code on GitHub"
             >
               <Github size={20} />
             </a>
           </div>
         </nav>
 
-        <section className="relative mb-32">
+        <section className="relative mb-32" aria-labelledby="hero-heading">
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-tech-primary opacity-5 blur-[120px] pointer-events-none" />
           <div className="absolute top-0 -right-24 w-96 h-96 bg-tech-secondary opacity-5 blur-[120px] pointer-events-none" />
 
@@ -74,9 +77,9 @@ export default function App() {
               className="space-y-6"
             >
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tech-primary/10 text-tech-primary text-xs font-black uppercase tracking-widest">
-                <Zap size={14} className="fill-current" /> Future of Innovation
+                <Zap size={14} className="fill-current" aria-hidden="true" /> Future of Innovation
               </span>
-              <h2 className="text-6xl md:text-8xl font-display font-black tracking-tighter leading-[0.85]">
+              <h2 id="hero-heading" className="text-6xl md:text-8xl font-display font-black tracking-tighter leading-[0.85]">
                 Navigate <br />
                 <span className="text-tech-primary italic">Technology</span> Today
               </h2>
@@ -86,17 +89,17 @@ export default function App() {
             </motion.div>
 
             <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-              <button className="bg-tech-primary text-white px-8 py-4 rounded-2xl font-black text-lg shadow-xl shadow-tech-primary/20 hover:scale-105 transition-all active:scale-95">
+              <button className="bg-tech-primary text-white px-8 py-4 rounded-2xl font-black text-lg shadow-xl shadow-tech-primary/20 hover:scale-105 transition-all active:scale-95" aria-label="Browse technology roadmaps">
                 Explore Roadmaps
               </button>
-              <button className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-2xl font-black text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+              <button className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-2xl font-black text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" aria-label="View technology statistics">
                 View Statistics
               </button>
             </div>
           </div>
         </section>
 
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32">
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32" aria-label="Platform statistics">
           {[
             { icon: <TrendingUp className="text-tech-primary" />, label: 'Technologies', value: '12+' },
             { icon: <Compass className="text-tech-secondary" />, label: 'Milestones', value: '48+' },
@@ -111,7 +114,7 @@ export default function App() {
           ))}
         </section>
 
-        <main id="technologies" className="space-y-16">
+        <main id="technologies" className="space-y-16" role="main" aria-label="Technology roadmaps explorer">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-2">
               <h2 className="text-4xl font-display font-black tracking-tight">Interactive Roadmaps</h2>

@@ -1,58 +1,55 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-tech-bg: #fafafa;
+  --color-tech-dark: #050505;
+  --color-tech-primary: #6366f1;
+  --color-tech-secondary: #10b981;
+  --color-tech-accent: #f59e0b;
+
+  --font-display: "Space Grotesk", sans-serif;
+}
 
 :root {
   --tech-bg: #fafafa;
-  --tech-primary: #6366f1;
-  color-scheme: light;
 }
 
 .dark {
   --tech-bg: #050505;
-  color-scheme: dark;
-}
-
-.light {
-  --tech-bg: #fafafa;
-  color-scheme: light;
 }
 
 html {
-  background-color: var(--tech-bg);
+  @apply scroll-smooth;
 }
 
 body {
   @apply bg-tech-bg text-slate-900 dark:text-slate-100 transition-colors duration-300 antialiased;
   margin: 0;
   min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
-.glass {
+@utility glass {
   @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200 dark:border-slate-800/50;
 }
 
-.roadmap-line::before {
-  content: '';
-  @apply absolute left-4 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800;
+@utility roadmap-line {
+  &::before {
+    content: '';
+    @apply absolute left-4 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800;
+  }
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 5px;
-}
+@utility custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-track {
-  @apply bg-transparent;
-}
+  &::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-slate-200 dark:bg-slate-800 rounded-full;
-}
-
-.light .custom-scrollbar::-webkit-scrollbar-thumb {
-  @apply bg-slate-300;
-}
-
-kbd {
-  @apply px-2 py-1 text-xs font-mono bg-slate-200 dark:bg-slate-700 rounded border border-slate-300 dark:border-slate-600;
+  &::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 dark:bg-slate-800 rounded-full;
+  }
 }

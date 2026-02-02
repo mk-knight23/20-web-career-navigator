@@ -1,6 +1,6 @@
 # TechVista - Technology Roadmap Viewer
 
-A professional platform for exploring and visualizing the future of technology through interactive roadmaps. Built with React 18, TypeScript, and Tailwind CSS.
+A professional platform for exploring and visualizing the future of technology through interactive roadmaps. Built with React 19, TypeScript, and Tailwind CSS v4.
 
 ## Features
 
@@ -14,12 +14,12 @@ A professional platform for exploring and visualizing the future of technology t
 
 ## Tech Stack
 
-- **React 18** - Modern UI library
-- **TypeScript** - Type-safe development
-- **Vite** - High-speed build tool
-- **Tailwind CSS** - Advanced utility-first styling
-- **Zustand** - Global state management & persistence
-- **Framer Motion** - Production-grade animations
+- **React 19.2.3** - Latest UI library
+- **TypeScript 5.9.3** - Type-safe development
+- **Vite 6.4.1** - High-speed build tool
+- **Tailwind CSS v4** - Advanced utility-first styling
+- **Zustand 5.0.2** - Global state management & persistence
+- **Framer Motion 12.29.2** - Production-grade animations
 - **Lucide React** - Modern icon system
 
 ## Getting Started
@@ -33,10 +33,10 @@ A professional platform for exploring and visualizing the future of technology t
 
 ```bash
 # Clone the repository
-git clone https://github.com/mk-knight23/38-Tech-Roadmaps-Viewer.git
+git clone https://github.com/mk-knight23/techvista-roadmaps-viewer.git
 
 # Navigate to project
-cd 38-Tech-Roadmaps-Viewer
+cd techvista-roadmaps-viewer
 
 # Install dependencies
 npm install
@@ -55,39 +55,12 @@ npm run build
 npm run preview
 ```
 
-## Project Structure
-
-```
-38-Tech-Roadmaps-Viewer/
-├── src/
-│   ├── components/
-│   │   └── RoadmapExplorer.tsx # Core viewer logic
-│   ├── data/
-│   │   └── roadmaps.ts        # Roadmap datasets
-│   ├── stores/
-│   │   └── techStore.ts       # Global state
-│   ├── types/
-│   │   └── tech.ts            # TS interfaces
-│   ├── App.tsx               # Main layout
-│   └── index.css             # Global styles & timeline
-├── index.html
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
-
-## Deployment
-
-This project includes a GitHub Actions workflow for automatic deployment to GitHub Pages.
-
-1. Enable GitHub Pages in repository settings.
-2. Set source to "GitHub Actions".
-3. Push to the `main` branch to trigger deployment.
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-**Live Demo:** [https://mk-knight23.github.io/38-Tech-Roadmaps-Viewer/](https://mk-knight23.github.io/38-Tech-Roadmaps-Viewer/)
+**Built by [Kazi Musharraf](https://github.com/mkazi-)*
+Status: 🟢 Active
+Last Updated: 2026-02-02
