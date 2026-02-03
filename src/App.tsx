@@ -1,18 +1,12 @@
-import { motion } from 'framer-motion'
+import { Outlet, Link } from 'react-router'
 import { useSettingsStore } from '@/stores/settings'
 import {
   Telescope,
-  Zap,
   Moon,
   Sun,
   Github,
-  ChevronRight,
-  TrendingUp,
-  Users,
-  Compass,
   Settings as SettingsIcon,
 } from 'lucide-react'
-import { RoadmapExplorer } from './components/RoadmapExplorer'
 import { SettingsPanel } from './components/SettingsPanel'
 
 export default function App() {
@@ -24,21 +18,21 @@ export default function App() {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <nav className="flex justify-between items-center mb-20" role="navigation" aria-label="Main navigation">
           <div className="flex items-center gap-3">
-            <div className="bg-tech-primary p-2.5 rounded-2xl shadow-lg shadow-tech-primary/30" aria-hidden="true">
-              <Telescope className="text-white w-7 h-7" />
-            </div>
-            <h1 className="text-2xl font-display font-black tracking-tight">
-              Tech<span className="text-tech-primary">Vista</span>
-            </h1>
+            <Link to="/" className="flex items-center gap-3">
+              <div className="bg-tech-primary p-2.5 rounded-2xl shadow-lg shadow-tech-primary/30" aria-hidden="true">
+                <Telescope className="text-white w-7 h-7" />
+              </div>
+              <h1 className="text-2xl font-display font-black tracking-tight">
+                Tech<span className="text-tech-primary">Vista</span>
+              </h1>
+            </Link>
           </div>
 
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex items-center gap-8 mr-8" role="list">
-              {['Vision', 'Technologies', 'Stats', 'Comparison'].map(item => (
-                <a key={item} href="#" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors" aria-label={`Navigate to ${item}`} role="listitem">
-                  {item}
-                </a>
-              ))}
+              <Link to="/" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors" aria-label="Navigate to Home" role="listitem">Home</Link>
+              <Link to="/stats" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors" aria-label="Navigate to Stats" role="listitem">Stats</Link>
+              <Link to="/settings" className="text-sm font-bold uppercase tracking-widest text-slate-500 hover:text-tech-primary transition-colors" aria-label="Navigate to Settings" role="listitem">Settings</Link>
             </div>
             <button
               onClick={() => toggleHelp()}
@@ -66,66 +60,8 @@ export default function App() {
           </div>
         </nav>
 
-        <section className="relative mb-32" aria-labelledby="hero-heading">
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-tech-primary opacity-5 blur-[120px] pointer-events-none" />
-          <div className="absolute top-0 -right-24 w-96 h-96 bg-tech-secondary opacity-5 blur-[120px] pointer-events-none" />
-
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="space-y-6"
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-tech-primary/10 text-tech-primary text-xs font-black uppercase tracking-widest">
-                <Zap size={14} className="fill-current" aria-hidden="true" /> Future of Innovation
-              </span>
-              <h2 id="hero-heading" className="text-6xl md:text-8xl font-display font-black tracking-tighter leading-[0.85]">
-                Navigate <br />
-                <span className="text-tech-primary italic">Technology</span> Today
-              </h2>
-              <p className="text-slate-500 dark:text-slate-400 text-xl font-medium max-w-xl mx-auto">
-                Explore high-impact roadmaps for cutting-edge technologies. Discover trends, milestones, and the future.
-              </p>
-            </motion.div>
-
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-              <button className="bg-tech-primary text-white px-8 py-4 rounded-2xl font-black text-lg shadow-xl shadow-tech-primary/20 hover:scale-105 transition-all active:scale-95" aria-label="Browse technology roadmaps">
-                Explore Roadmaps
-              </button>
-              <button className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 px-8 py-4 rounded-2xl font-black text-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" aria-label="View technology statistics">
-                View Statistics
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32" aria-label="Platform statistics">
-          {[
-            { icon: <TrendingUp className="text-tech-primary" />, label: 'Technologies', value: '12+' },
-            { icon: <Compass className="text-tech-secondary" />, label: 'Milestones', value: '48+' },
-            { icon: <Users className="text-tech-accent" />, label: 'Categories', value: '5' },
-            { icon: <Zap className="text-quiz-secondary" />, label: 'Live Data', value: '100%' }
-          ].map((stat, idx) => (
-            <div key={idx} className="glass p-8 rounded-[2rem] text-center space-y-2">
-              <div className="flex justify-center mb-2">{stat.icon}</div>
-              <p className="text-3xl font-display font-black tracking-tight">{stat.value}</p>
-              <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">{stat.label}</p>
-            </div>
-          ))}
-        </section>
-
-        <main id="technologies" className="space-y-16" role="main" aria-label="Technology roadmaps explorer">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-2">
-              <h2 className="text-4xl font-display font-black tracking-tight">Interactive Roadmaps</h2>
-              <p className="text-slate-500 font-medium">Click any technology to see its detailed future timeline</p>
-            </div>
-            <div className="text-sm font-bold text-tech-primary flex items-center gap-2 cursor-pointer hover:underline">
-              Compare all technologies <ChevronRight size={18} />
-            </div>
-          </div>
-
-          <RoadmapExplorer />
+        <main role="main" aria-label="Main content">
+          <Outlet />
         </main>
 
         <footer className="mt-48 pb-12 border-t border-slate-200 dark:border-slate-800 pt-16">
@@ -144,9 +80,9 @@ export default function App() {
               <div className="space-y-4">
                 <p className="text-slate-400">Platform</p>
                 <div className="flex flex-col gap-3">
-                  <a href="#" className="hover:text-tech-primary">Roadmaps</a>
-                  <a href="#" className="hover:text-tech-primary">Comparison</a>
-                  <a href="#" className="hover:text-tech-primary">Stats</a>
+                  <Link to="/" className="hover:text-tech-primary">Home</Link>
+                  <Link to="/stats" className="hover:text-tech-primary">Stats</Link>
+                  <Link to="/settings" className="hover:text-tech-primary">Settings</Link>
                 </div>
               </div>
               <div className="space-y-4">
