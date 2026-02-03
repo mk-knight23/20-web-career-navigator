@@ -2,7 +2,16 @@
 
 A professional platform for exploring and visualizing the future of technology through interactive roadmaps. Built with React 19, TypeScript, and Tailwind CSS v4.
 
-## 📦 Deployment
+## Live Demo
+
+| Platform | Status | URL |
+|----------|--------|-----|
+| Render | Ready | https://20-web-career-navigator.onrender.com |
+| Vercel | Ready | https://20-web-career-navigator.vercel.app |
+| Firebase | Ready | https://web-career-navigator.web.app |
+| AWS Amplify | Ready | https://main.web-career-navigator.amplifyapp.com |
+
+## Deployment
 
 ### Render (One-Click Deploy)
 This repository includes a `render.yaml` blueprint for automated deployment:
@@ -10,6 +19,19 @@ This repository includes a `render.yaml` blueprint for automated deployment:
 2. Click "New +" → "Blueprint"
 3. Connect repository: `mk-knight23/20-web-career-navigator`
 4. Render will auto-detect and apply the blueprint configuration
+
+### Vercel
+```bash
+npm i -g vercel
+vercel --prod
+```
+
+### Firebase
+```bash
+npm i -g firebase-tools
+firebase login
+firebase deploy
+```
 
 ### Manual Deployment
 - **Build Command**: `npm run build`
