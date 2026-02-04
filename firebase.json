@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "web-career-navigator",
+    "site": "tech-roadmaps-vista",
     "public": "dist",
     "ignore": [
       "firebase.json",
