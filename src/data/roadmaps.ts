@@ -1,20 +1,39 @@
-import type { Technology } from '../types/tech'
+import type { Technology } from '../types/tech';
 
 export const ROADMAPS: Technology[] = [
   {
     id: 'react',
     name: 'React Ecosystem',
     category: 'web',
-    description: 'The future of frontend development with Server Components and fine-grained reactivity.',
+    description:
+      'The future of frontend development with Server Components and fine-grained reactivity.',
     icon: '⚛️',
     color: 'from-sky-400 to-blue-600',
     growth: 85,
     demand: 95,
     milestones: [
-      { id: 'r1', year: '2024', title: 'React 19 RC', description: 'React Compiler (Forget) and Actions.', status: 'past' },
-      { id: 'r2', year: '2025', title: 'Server Components Dominance', description: 'Widespread adoption of RSC across frameworks.', status: 'present' },
-      { id: 'r3', year: '2026', title: 'Static Site Generation 2.0', description: 'Edge-native rendering patterns become standard.', status: 'future' }
-    ]
+      {
+        id: 'r1',
+        year: '2024',
+        title: 'React 19 RC',
+        description: 'React Compiler (Forget) and Actions.',
+        status: 'past',
+      },
+      {
+        id: 'r2',
+        year: '2025',
+        title: 'Server Components Dominance',
+        description: 'Widespread adoption of RSC across frameworks.',
+        status: 'present',
+      },
+      {
+        id: 'r3',
+        year: '2026',
+        title: 'Static Site Generation 2.0',
+        description: 'Edge-native rendering patterns become standard.',
+        status: 'future',
+      },
+    ],
   },
   {
     id: 'ai-agents',
@@ -26,10 +45,28 @@ export const ROADMAPS: Technology[] = [
     growth: 150,
     demand: 98,
     milestones: [
-      { id: 'a1', year: '2024', title: 'LLM Reasoning', description: 'Chain-of-thought and tree-of-thought techniques.', status: 'past' },
-      { id: 'a2', year: '2025', title: 'Multi-Agent Orchestration', description: 'Teams of specialized agents working together.', status: 'present' },
-      { id: 'a3', year: '2027', title: 'AGI Foundations', description: 'Early general-purpose problem solving capabilities.', status: 'future' }
-    ]
+      {
+        id: 'a1',
+        year: '2024',
+        title: 'LLM Reasoning',
+        description: 'Chain-of-thought and tree-of-thought techniques.',
+        status: 'past',
+      },
+      {
+        id: 'a2',
+        year: '2025',
+        title: 'Multi-Agent Orchestration',
+        description: 'Teams of specialized agents working together.',
+        status: 'present',
+      },
+      {
+        id: 'a3',
+        year: '2027',
+        title: 'AGI Foundations',
+        description: 'Early general-purpose problem solving capabilities.',
+        status: 'future',
+      },
+    ],
   },
   {
     id: 'rust',
@@ -41,10 +78,28 @@ export const ROADMAPS: Technology[] = [
     growth: 120,
     demand: 88,
     milestones: [
-      { id: 'ru1', year: '2023', title: 'Oxidation of Web Tools', description: 'SWC, Turbopack, and Biome leading the way.', status: 'past' },
-      { id: 'ru2', year: '2025', title: 'Rust in Linux Kernel', description: 'Mainstream kernel development with Rust.', status: 'present' },
-      { id: 'ru3', year: '2026', title: 'WebAssembly Domination', description: 'Rust-powered WASM replaces heavy JS modules.', status: 'future' }
-    ]
+      {
+        id: 'ru1',
+        year: '2023',
+        title: 'Oxidation of Web Tools',
+        description: 'SWC, Turbopack, and Biome leading the way.',
+        status: 'past',
+      },
+      {
+        id: 'ru2',
+        year: '2025',
+        title: 'Rust in Linux Kernel',
+        description: 'Mainstream kernel development with Rust.',
+        status: 'present',
+      },
+      {
+        id: 'ru3',
+        year: '2026',
+        title: 'WebAssembly Domination',
+        description: 'Rust-powered WASM replaces heavy JS modules.',
+        status: 'future',
+      },
+    ],
   },
   {
     id: 'quantum',
@@ -56,10 +111,28 @@ export const ROADMAPS: Technology[] = [
     growth: 40,
     demand: 65,
     milestones: [
-      { id: 'q1', year: '2024', title: 'Error Correction Breakthrough', description: 'Logical qubits with low error rates.', status: 'past' },
-      { id: 'q2', year: '2026', title: 'Commercial Advantage', description: 'First industrial use cases beating classical computers.', status: 'future' },
-      { id: 'q3', year: '2030', title: 'Quantum Internet', description: 'Secure global quantum communication network.', status: 'future' }
-    ]
+      {
+        id: 'q1',
+        year: '2024',
+        title: 'Error Correction Breakthrough',
+        description: 'Logical qubits with low error rates.',
+        status: 'past',
+      },
+      {
+        id: 'q2',
+        year: '2026',
+        title: 'Commercial Advantage',
+        description: 'First industrial use cases beating classical computers.',
+        status: 'future',
+      },
+      {
+        id: 'q3',
+        year: '2030',
+        title: 'Quantum Internet',
+        description: 'Secure global quantum communication network.',
+        status: 'future',
+      },
+    ],
   },
   {
     id: 'cybersecurity',
@@ -71,9 +144,27 @@ export const ROADMAPS: Technology[] = [
     growth: 75,
     demand: 92,
     milestones: [
-      { id: 's1', year: '2024', title: 'Passwordless Auth', description: 'Passkeys becoming the standard for major apps.', status: 'past' },
-      { id: 's2', year: '2025', title: 'AI-Driven Threat Hunting', description: 'Real-time automated response to 0-day attacks.', status: 'present' },
-      { id: 's3', year: '2027', title: 'Post-Quantum Crypto', description: 'Mandatory migration to quantum-resistant algorithms.', status: 'future' }
-    ]
-  }
-]
+      {
+        id: 's1',
+        year: '2024',
+        title: 'Passwordless Auth',
+        description: 'Passkeys becoming the standard for major apps.',
+        status: 'past',
+      },
+      {
+        id: 's2',
+        year: '2025',
+        title: 'AI-Driven Threat Hunting',
+        description: 'Real-time automated response to 0-day attacks.',
+        status: 'present',
+      },
+      {
+        id: 's3',
+        year: '2027',
+        title: 'Post-Quantum Crypto',
+        description: 'Mandatory migration to quantum-resistant algorithms.',
+        status: 'future',
+      },
+    ],
+  },
+];

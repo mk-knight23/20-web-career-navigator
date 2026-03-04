@@ -1,9 +1,9 @@
-import { useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useSettingsStore } from '@/stores/settings'
-import { useStatsStore } from '@/stores/stats'
-import { useAudio } from '@/hooks/useAudio'
-import { KEYBOARD_SHORTCUTS } from '@/utils/constants'
+import { useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useSettingsStore } from '@/stores/settings';
+import { useStatsStore } from '@/stores/stats';
+import { useAudio } from '@/hooks/useAudio';
+import { KEYBOARD_SHORTCUTS } from '@/utils/constants';
 import {
   Settings,
   Volume2,
@@ -14,43 +14,45 @@ import {
   X,
   Keyboard,
   Telescope,
-} from 'lucide-react'
+} from 'lucide-react';
 
 interface SettingsPanelProps {
-  onClose: () => void
+  onClose: () => void;
 }
 
 export function SettingsPanel({ onClose }: SettingsPanelProps) {
-  const settings = useSettingsStore()
-  const stats = useStatsStore()
-  const { playClick } = useAudio()
+  const settings = useSettingsStore();
+  const stats = useStatsStore();
+  const { playClick } = useAudio();
 
   const themeOptions = [
     { value: 'dark' as const, label: 'Dark', icon: Moon },
     { value: 'light' as const, label: 'Light', icon: Sun },
     { value: 'system' as const, label: 'System', icon: Monitor },
-  ]
+  ];
 
   const formatTime = (seconds: number): string => {
-    const hours = Math.floor(seconds / 3600)
-    const minutes = Math.floor((seconds % 3600) / 60)
-    if (hours > 0) return `${hours}h ${minutes}m`
-    return `${minutes}m`
-  }
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    if (hours > 0) return `${hours}h ${minutes}m`;
+    return `${minutes}m`;
+  };
 
   useEffect(() => {
     if (settings.showHelp) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ''
+      document.body.style.overflow = '';
     }
-    return () => { document.body.style.overflow = '' }
-  }, [settings.showHelp])
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [settings.showHelp]);
 
   const close = () => {
-    playClick()
-    onClose()
-  }
+    playClick();
+    onClose();
+  };
 
   return (
     <AnimatePresence>
@@ -70,12 +72,14 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
             className="glass w-full max-w-lg max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
+            onClick={e => e.stopPropagation()}
           >
             <header className="flex items-center justify-between p-6 border-b border-slate-200 dark:border-slate-800">
               <div className="flex items-center space-x-3">
                 <Settings className="text-tech-primary" size={24} />
-                <h2 id="settings-title" className="text-xl font-bold">Settings</h2>
+                <h2 id="settings-title" className="text-xl font-bold">
+                  Settings
+                </h2>
               </div>
               <button
                 onClick={close}
@@ -95,7 +99,10 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
                 <div className="flex items-center justify-between p-4 bg-slate-100 dark:bg-slate-800 rounded-xl">
                   <span className="font-medium">Sound Effects</span>
                   <button
-                    onClick={() => { playClick(); settings.toggleSound() }}
+                    onClick={() => {
+                      playClick();
+                      settings.toggleSound();
+                    }}
                     className={`relative w-14 h-7 rounded-full transition-colors ${
                       settings.soundEnabled ? 'bg-tech-primary' : 'bg-slate-600'
                     }`}
@@ -117,10 +124,13 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
                   <span>Theme</span>
                 </h3>
                 <div className="grid grid-cols-3 gap-3">
-                  {themeOptions.map((option) => (
+                  {themeOptions.map(option => (
                     <button
                       key={option.value}
-                      onClick={() => { playClick(); settings.setTheme(option.value) }}
+                      onClick={() => {
+                        playClick();
+                        settings.setTheme(option.value);
+                      }}
                       className={`flex flex-col items-center p-4 rounded-xl transition-all border-2 ${
                         settings.theme === option.value
                           ? 'border-tech-primary bg-tech-primary/10'
@@ -135,7 +145,9 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
                       />
                       <span
                         className={`text-sm font-medium ${
-                          settings.theme === option.value ? 'text-slate-900 dark:text-white' : 'text-slate-600 dark:text-slate-400'
+                          settings.theme === option.value
+                            ? 'text-slate-900 dark:text-white'
+                            : 'text-slate-600 dark:text-slate-400'
                         }`}
                       >
                         {option.label}
@@ -153,23 +165,36 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
                 <div className="grid grid-cols-2 gap-4 p-4 bg-slate-100 dark:bg-slate-800 rounded-xl">
                   <div className="text-center">
                     <div className="text-2xl font-bold">{stats.totalRoadmapsViewed}</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-wider">Roadmaps Viewed</div>
+                    <div className="text-xs text-slate-500 uppercase tracking-wider">
+                      Roadmaps Viewed
+                    </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-tech-primary">{stats.totalSearches}</div>
+                    <div className="text-2xl font-bold text-tech-primary">
+                      {stats.totalSearches}
+                    </div>
                     <div className="text-xs text-slate-500 uppercase tracking-wider">Searches</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-tech-secondary">{stats.totalComparisons}</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-wider">Comparisons</div>
+                    <div className="text-2xl font-bold text-tech-secondary">
+                      {stats.totalComparisons}
+                    </div>
+                    <div className="text-xs text-slate-500 uppercase tracking-wider">
+                      Comparisons
+                    </div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold">{formatTime(stats.totalTimeSpent)}</div>
-                    <div className="text-xs text-slate-500 uppercase tracking-wider">Time Spent</div>
+                    <div className="text-xs text-slate-500 uppercase tracking-wider">
+                      Time Spent
+                    </div>
                   </div>
                 </div>
                 <button
-                  onClick={() => { playClick(); stats.resetStats() }}
+                  onClick={() => {
+                    playClick();
+                    stats.resetStats();
+                  }}
                   className="mt-4 w-full flex items-center justify-center space-x-2 p-3 text-red-500 hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-xl transition-colors"
                 >
                   <RotateCcw size={16} />
@@ -183,12 +208,14 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
                   <span>Keyboard Shortcuts</span>
                 </h3>
                 <div className="space-y-2">
-                  {KEYBOARD_SHORTCUTS.map((shortcut) => (
+                  {KEYBOARD_SHORTCUTS.map(shortcut => (
                     <div
                       key={shortcut.action}
                       className="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-800 rounded-lg"
                     >
-                      <span className="text-sm text-slate-600 dark:text-slate-400">{shortcut.action}</span>
+                      <span className="text-sm text-slate-600 dark:text-slate-400">
+                        {shortcut.action}
+                      </span>
                       <kbd className="px-3 py-1 text-xs font-mono bg-slate-200 dark:bg-slate-700 rounded">
                         {shortcut.key}
                       </kbd>
@@ -205,5 +232,5 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }

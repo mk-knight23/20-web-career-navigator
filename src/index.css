@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --color-tech-bg: #fafafa;
@@ -7,7 +7,7 @@
   --color-tech-secondary: #10b981;
   --color-tech-accent: #f59e0b;
 
-  --font-display: "Space Grotesk", sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
 }
 
 :root {
