@@ -42,7 +42,6 @@
     "typescript": "~5.9.3",
     "vite": "^6.4.1",
     "vitest": "^4.0.18",
-    "": "testing-library/jest-dom",
     "prettier": "^3",
     "eslint": "^8",
     "typescript-eslint": "^7"
