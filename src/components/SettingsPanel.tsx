@@ -226,7 +226,7 @@ export function SettingsPanel({ onClose }: SettingsPanelProps) {
             </div>
 
             <footer className="p-6 border-t border-slate-200 dark:border-slate-800 text-center">
-              <p className="text-xs text-slate-500">TechVista v1.0.0 - Built with React + Vite</p>
+              <p className="text-xs text-slate-500">MK PathForge v1.0.0 - Built with React + Vite</p>
             </footer>
           </motion.div>
         </motion.div>

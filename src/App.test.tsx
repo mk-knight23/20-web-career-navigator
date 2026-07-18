@@ -24,7 +24,7 @@ vi.mock('./stores/settings', () => ({
   }),
 }));
 
-describe('TechVista Technology Roadmap Viewer', () => {
+describe('MK PathForge Technology Roadmap Viewer', () => {
   it('renders without crashing', () => {
     const { container } = render(<App />);
     expect(container.firstChild).toBeInTheDocument();
@@ -63,7 +63,7 @@ describe('TechVista Technology Roadmap Viewer', () => {
   it('has proper ARIA labels for accessibility', () => {
     render(<App />);
     expect(
-      screen.getByRole('application', { name: /TechVista Technology Roadmap Viewer/i })
+      screen.getByRole('application', { name: /MK PathForge Technology Roadmap Viewer/i })
     ).toBeInTheDocument();
     expect(screen.getByRole('main', { name: /Technology roadmaps explorer/i })).toBeInTheDocument();
   });

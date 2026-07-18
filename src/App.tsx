@@ -10,7 +10,7 @@ export default function App() {
     <div
       className={`min-h-screen ${isDarkMode ? 'dark' : ''}`}
       role="application"
-      aria-label="TechVista Technology Roadmap Viewer"
+      aria-label="MK PathForge Technology Roadmap Viewer"
     >
       <SettingsPanel onClose={() => toggleHelp()} />
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -98,7 +98,7 @@ export default function App() {
             <div className="space-y-4 max-w-xs">
               <div className="flex items-center gap-2">
                 <Telescope className="text-tech-primary w-6 h-6" />
-                <span className="text-xl font-display font-black">TechVista</span>
+                <span className="text-xl font-display font-black">MK PathForge</span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">
                 Building a clearer vision of the technological future through data-driven roadmaps
@@ -146,7 +146,7 @@ export default function App() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
-            <p>&copy; 2026 TechVista Labs. All rights reserved.</p>
+            <p>&copy; 2026 MK PathForge Labs. All rights reserved.</p>
             <p>Built with React + Vite + Framer Motion</p>
           </div>
         </footer>
