@@ -1,21 +1,21 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-tech-bg: #fafafa;
-  --color-tech-dark: #050505;
-  --color-tech-primary: #6366f1;
-  --color-tech-secondary: #10b981;
-  --color-tech-accent: #f59e0b;
+  --color-tech-bg: #e8edf5;
+  --color-tech-dark: #0c1222;
+  --color-tech-primary: #3b82f6;
+  --color-tech-secondary: #06b6d4;
+  --color-tech-accent: #8b5cf6;
 
   --font-display: 'Space Grotesk', sans-serif;
 }
 
 :root {
-  --tech-bg: #fafafa;
+  --tech-bg: #e8edf5;
 }
 
 .dark {
-  --tech-bg: #050505;
+  --tech-bg: #0c1222;
 }
 
 html {
@@ -27,16 +27,54 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -200px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59,130,246,0.12), transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -200px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139,92,246,0.08), transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 @utility glass {
-  @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200 dark:border-slate-800/50;
+  @apply backdrop-blur-xl border;
+  background: rgba(255, 255, 255, 0.45);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+}
+
+.dark .glass {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 @utility roadmap-line {
   &::before {
     content: '';
-    @apply absolute left-4 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-800;
+    @apply absolute left-4 top-0 bottom-0 w-0.5;
+    background: linear-gradient(180deg, rgba(59,130,246,0.3), rgba(139,92,246,0.3));
   }
 }
 
@@ -50,6 +88,6 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    @apply bg-slate-200 dark:bg-slate-800 rounded-full;
+    @apply bg-slate-300/50 dark:bg-slate-700/50 rounded-full;
   }
 }

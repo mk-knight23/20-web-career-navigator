@@ -45,7 +45,7 @@ export function RoadmapExplorer() {
               className={clsx(
                 'px-5 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all',
                 activeCategory === cat.id
-                  ? 'bg-white dark:bg-slate-800 shadow-sm text-tech-primary'
+                  ? 'glass text-tech-primary'
                   : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
               )}
             >
@@ -61,7 +61,7 @@ export function RoadmapExplorer() {
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             placeholder="Search technologies..."
-            className="w-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl pl-12 pr-4 py-3 outline-none focus:ring-2 focus:ring-tech-primary/20 transition-all"
+            className="w-full glass rounded-2xl pl-12 pr-4 py-3 outline-none focus:ring-2 focus:ring-tech-primary/20 transition-all"
           />
         </div>
       </div>
@@ -136,7 +136,7 @@ export function RoadmapExplorer() {
               initial={{ opacity: 0, scale: 0.9, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 40 }}
-              className="relative w-full max-w-4xl bg-white dark:bg-slate-900 rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh]"
+              className="relative w-full max-w-4xl glass rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[90vh]"
             >
               {/* Sidebar Info */}
               <div
@@ -186,7 +186,7 @@ export function RoadmapExplorer() {
               </div>
 
               {/* Roadmap Timeline */}
-              <div className="w-full md:w-2/3 p-10 overflow-y-auto custom-scrollbar bg-white dark:bg-slate-900">
+              <div className="w-full md:w-2/3 p-10 overflow-y-auto custom-scrollbar glass">
                 <div className="flex items-center justify-between mb-12">
                   <h4 className="text-sm font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
                     <Target size={16} /> Roadmap Milestones
@@ -220,7 +220,7 @@ export function RoadmapExplorer() {
                             ms.status === 'past'
                               ? 'bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30'
                               : ms.status === 'present'
-                                ? 'bg-indigo-100 text-indigo-600 dark:bg-indigo-900/30'
+                                ? 'bg-blue-100/50 text-blue-600 dark:bg-blue-900/30'
                                 : 'bg-slate-100 text-slate-500 dark:bg-slate-800'
                           )}
                         >

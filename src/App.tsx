@@ -62,7 +62,7 @@ export default function App() {
             </div>
             <button
               onClick={() => toggleHelp()}
-              className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              className="p-3 rounded-2xl glass text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
               aria-label="Open settings panel"
             >
               <SettingsIcon size={20} />
@@ -72,7 +72,7 @@ export default function App() {
                 toggleDarkMode();
                 useSettingsStore.getState().applyTheme();
               }}
-              className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              className="p-3 rounded-2xl glass text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
               aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
@@ -81,7 +81,7 @@ export default function App() {
               href="https://github.com/mk-knight23/20-web-career-navigator"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
+              className="p-3 rounded-2xl glass text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
               aria-label="View source code on GitHub"
             >
               <Github size={20} />
