@@ -3,6 +3,7 @@ import App from '../App';
 import Home from '../pages/Home';
 import Stats from '../pages/Stats';
 import Settings from '../pages/Settings';
+import About from '../pages/About';
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'stats', element: <Stats /> },
       { path: 'settings', element: <Settings /> },
+      { path: 'about', element: <About /> },
     ],
   },
 ]);

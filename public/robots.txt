@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow:
+
+Sitemap: https://20-web-career-navigator.vercel.app/sitemap.xml

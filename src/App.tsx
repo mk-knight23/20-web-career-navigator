@@ -78,7 +78,7 @@ export default function App() {
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             <a
-              href="https://github.com/mk-knight23/38-Tech-Roadmaps-Viewer"
+              href="https://github.com/mk-knight23/20-web-career-navigator"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-tech-primary transition-all"
@@ -124,26 +124,23 @@ export default function App() {
               <div className="space-y-4">
                 <p className="text-slate-400">Resources</p>
                 <div className="flex flex-col gap-3">
-                  <a href="#" className="hover:text-tech-primary">
-                    API Docs
-                  </a>
-                  <a href="#" className="hover:text-tech-primary">
-                    Newsletter
-                  </a>
-                  <a href="#" className="hover:text-tech-primary">
-                    Blog
+                  <Link to="/about" className="hover:text-tech-primary">
+                    About
+                  </Link>
+                  <a href="https://github.com/mk-knight23/20-web-career-navigator" target="_blank" rel="noopener noreferrer" className="hover:text-tech-primary">
+                    GitHub
                   </a>
                 </div>
               </div>
               <div className="space-y-4">
                 <p className="text-slate-400">Legal</p>
                 <div className="flex flex-col gap-3">
-                  <a href="#" className="hover:text-tech-primary">
+                  <Link to="/about#privacy" className="hover:text-tech-primary">
                     Privacy
-                  </a>
-                  <a href="#" className="hover:text-tech-primary">
+                  </Link>
+                  <Link to="/about#terms" className="hover:text-tech-primary">
                     Terms
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
