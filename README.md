@@ -1,224 +1,56 @@
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+# MK PathForge
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+**Technology Career & Learning Roadmap Platform**
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+Explore technology career paths, track learning progress, and build personalized skill roadmaps. Free career planning tool for developers.
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+🔗 **Live**: [https://20-web-career-navigator.vercel.app](https://20-web-career-navigator.vercel.app)
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+## Features
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+- 🗺️ Interactive career roadmaps for 12+ tech roles
+- 📊 Skill gap analysis and progress tracking
+- 🔄 Career comparison tool
+- 📋 Weekly learning plan generator
+- 💾 Local progress persistence (localStorage)
+- 🌙 Dark/light theme support
+- 📱 Fully responsive design
+- ♿ Accessible interface
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+## Tech Stack
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
+- React 19, TypeScript, Vite 6
+- Tailwind CSS 4, Framer Motion
+- React Router 7
 
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# [![CI/CD](https://github.com/mk-knight23/20-web-career-navigator/actions/workflows/ci.yml/badge.svg)](https://github.com/mk-knight23/20-web-career-navigator/actions)
-
-# 🚀 20-web-career-navigator (Collective Production Edition)
-
-## 💎 Overview
-Fully production-grade implementation of 20-web-career-navigator, refactored by the **69-Agent Opencode Collective**.
-
-## 🛡️ Trust & Compliance
-- **CI/CD**: Automated GitHub Actions with Gitleaks security scans.
-- **Security**: Standardized [SECURITY.md](SECURITY.md) protocol.
-- **Design**: Opencode Premium Design Tokens integrated.
-
-## 🏁 48-Hour Roadmap
-1. Initialize infrastructure via `.github/workflows`.
-2. Set your secrets in GitHub Environment settings.
-3. Deploy to production via Vercel/Docker.
-
-This repository is part of the **60-Repo Evolution Project** - a comprehensive initiative to modernize, professionalize, and scale a portfolio of 60 web applications and portfolios.
-
-## 📋 Evolution Status
-
-| Phase | Status | Completion |
-|-------|--------|------------|
-| Phase 1: Portfolios & Web Apps | 🔄 In Progress | 01-20 |
-| Phase 2: SaaS & Tools | ⏳ Pending | 21-40 |
-| Phase 3: AI & Automation | ⏳ Pending | 41-60 |
-
-## 🛠️ Tech Stack
-
-- **Framework:** Dynamic (detected per repository)
-- **Deployment:** Multi-platform (Vercel, Netlify, Firebase, Cloudflare)
-- **CI/CD:** GitHub Actions
-- **Monitoring:** Automated via Evolution Workflow
-
-## 📦 What's Included
-
-### Documentation
-- ✅ Professional README.md
-- ✅ EVOLUTION.md tracking
-- ✅ LinkedIn content assets
-- ✅ Video scripts
-
-### CI/CD
-- ✅ GitHub Actions workflow
-- ✅ Automated testing
-- ✅ Security scanning
-- ✅ Deployment automation
-
-### Deployment Configs
-- ✅ Vercel (`vercel.json`)
-- ✅ Netlify (`netlify.toml`)
-- ✅ Firebase (`firebase.json`)
-- ✅ Cloudflare (`wrangler.toml`)
-
-## 🚀 Quick Start
+## Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/mk-knight23/20-web-career-navigator.git
-cd 20-web-career-navigator
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
-
-# Build for production
-npm run build
 ```
 
-## 📊 Evolution Metrics
+## Environment Variables
 
-| Metric | Score |
-|--------|-------|
-| Documentation | 20/20 |
-| CI/CD | 20/20 |
-| Deployment | 20/20 |
-| Code Quality | 20/20 |
-| Security | 20/20 |
-| **Total** | **100/100** |
+Copy `.env.example` to `.env` and configure:
 
-## 🌐 Deployment URLs
+```
+VITE_GTM_ID=          # Google Tag Manager
+VITE_GA4_ID=          # Google Analytics 4
+```
 
-| Platform | URL |
-|----------|-----|
-| Vercel | https://20-web-career-navigator.vercel.app |
-| Netlify | https://20-web-career-navigator.netlify.app |
-| Firebase | https://20-web-career-navigator.web.app |
-| Cloudflare | https://20-web-career-navigator.pages.dev |
+## Deployment
 
-## 📱 Social Media Assets
+Deployed on Vercel. Push to `main` to trigger deployment.
 
-- **LinkedIn Post:** `content/linkedin-post.md`
-- **Video Script:** `content/video-script.md`
-- **Thumbnail:** `assets/thumbnail.png`
+## Contributing
 
-## 🤝 Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-This repository is part of an automated evolution project. For issues or suggestions, please open a GitHub issue.
+## License
 
-## 📄 License
-
-MIT License - see LICENSE file for details
+MIT
 
 ---
 
-🦾 **Evolved with OpenClaw** | Part of the 60-Repo Evolution Project
-
-## Security
-
-This project follows security best practices:
-- No hardcoded credentials
-- Dependency scanning enabled
-- Security headers configured
-- Regular security audits performed
+Built with care by **Qazi Musharof** — [Kazi Developer](https://www.mkazi.live)
