@@ -28,7 +28,7 @@ export default function App() {
                 <Telescope className="text-white w-7 h-7" />
               </div>
               <h1 className="text-2xl font-display font-black tracking-tight">
-                Tech<span className="text-tech-primary">Vista</span>
+                MK <span className="text-tech-primary">PathForge</span>
               </h1>
             </Link>
           </div>
@@ -146,7 +146,9 @@ export default function App() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
-            <p>&copy; 2026 MK PathForge Labs. All rights reserved.</p>
+            <p>
+              &copy; 2026 <a href="https://www.mkazi.live" target="_blank" rel="noopener noreferrer" className="hover:text-tech-primary transition-colors">Qazi Musharof — Kazi Developer</a>. All rights reserved.
+            </p>
             <p>Built with React + Vite + Framer Motion</p>
           </div>
         </footer>

@@ -7,7 +7,7 @@ export default function About() {
           MK PathForge is a free technology roadmap explorer for developers, engineers, and technology leaders. Track the evolution of key technologies — from AI agents and React ecosystem to quantum computing and cybersecurity — through interactive timelines with past, present, and future milestones.
         </p>
         <p className="text-slate-600 dark:text-slate-400 leading-relaxed mt-4">
-          Built and maintained by <strong>Qazi Musharof</strong>, an AI engineer and full-stack developer.
+          Built and maintained by <a href="https://www.mkazi.live" target="_blank" rel="noopener noreferrer" className="text-tech-primary hover:underline"><strong>Qazi Musharof — Kazi Developer</strong></a>, an AI Engineer, Systems Architect, and Full-Stack Developer.
         </p>
       </section>
 

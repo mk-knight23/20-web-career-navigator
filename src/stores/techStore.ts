@@ -8,6 +8,7 @@ interface TechStore {
   selectedTechId: string | null;
   comparisonIds: string[];
   isDarkMode: boolean;
+  completedMilestoneIds: string[];
 
   // Actions
   setSearchQuery: (query: string) => void;
@@ -16,6 +17,7 @@ interface TechStore {
   toggleComparisonId: (id: string) => void;
   clearComparison: () => void;
   toggleDarkMode: () => void;
+  toggleMilestoneCompleted: (id: string) => void;
 }
 
 export const useTechStore = create<TechStore>()(
@@ -26,6 +28,7 @@ export const useTechStore = create<TechStore>()(
       selectedTechId: null,
       comparisonIds: [],
       isDarkMode: true,
+      completedMilestoneIds: [],
 
       setSearchQuery: searchQuery => set({ searchQuery }),
       setActiveCategory: activeCategory => set({ activeCategory }),
@@ -41,9 +44,18 @@ export const useTechStore = create<TechStore>()(
         }),
       clearComparison: () => set({ comparisonIds: [] }),
       toggleDarkMode: () => set(state => ({ isDarkMode: !state.isDarkMode })),
+      toggleMilestoneCompleted: id =>
+        set(state => {
+          const exists = state.completedMilestoneIds.includes(id);
+          if (exists) {
+            return { completedMilestoneIds: state.completedMilestoneIds.filter(mid => mid !== id) };
+          }
+          return { completedMilestoneIds: [...state.completedMilestoneIds, id] };
+        }),
     }),
     {
       name: 'techvista-storage',
     }
   )
 );
+
